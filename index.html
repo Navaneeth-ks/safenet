@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeNet – Child Safety Monitor</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>SafeNet</h1>
+  <p>Child safety monitor</p>
+</header>
+
+<div class="app">
+
+  <!-- LEFT: CANVAS AREA -->
+  <div class="canvas-card">
+    <canvas id="canvas" width="900" height="600"></canvas>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="right-column">
+
+    <!-- INFO PANEL -->
+    <div class="side-panel">
+
+      <button id="undoBtn">Undo</button>
+
+      <div class="info-card">
+        <h3>Child Status</h3>
+        <div class="label-row">
+          <span>Movement:</span>
+          <span class="value moving" id="movement">–</span>
+        </div>
+        <div class="label-row">
+          <span>Activity Level:</span>
+          <span class="value" id="activity">–</span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>Health</h3>
+        <div class="label-row">
+          <span>Heart Rate:</span>
+          <span class="value" id="heartRate">–</span>
+        </div>
+      </div>
+
+      <div class="info-card warning">
+        <h3>Safety</h3>
+        <div class="label-row">
+          <span>Restricted Area:</span>
+          <span class="value safe" id="restricted">–</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- AI PANEL -->
+    <div class="ai-panel">
+      <h3>AI Assessment</h3>
+      <pre id="aiResult">Waiting for AI analysis…</pre>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Main Script (must be at bottom) -->
+<script src="script.js"></script>
+
+</body>
+</html>
