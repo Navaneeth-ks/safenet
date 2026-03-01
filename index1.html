@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SafeNet – Child Safety Monitor</title>
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>SafeNet</h1>
+    <p>Child safety monitor</p>
+  </header>
+
+  <!-- ===== Main Layout ===== -->
+  <main>
+
+    <!-- ===== Drawing / Planner Area ===== -->
+    <section id="planner-section">
+      <h3>House Planner</h3>
+
+      <!-- Canvas for drawing rooms + child -->
+      <canvas id="plannerCanvas" width="900" height="500"></canvas>
+    </section>
+
+    <!-- ===== Info Panel ===== -->
+    <aside id="info-panel">
+
+      <div class="card">
+        <h4>Scale</h4>
+        <p>1 grid unit = 1 meter</p>
+      </div>
+
+      <div class="card">
+        <h4>Child Status</h4>
+        <p>Movement: <span id="movementStatus">--</span></p>
+        <p>Activity Level: <span id="activityLevel">--</span></p>
+      </div>
+
+      <div class="card">
+        <h4>Motion</h4>
+        <p>Velocity: <span id="velocity">--</span> m/s</p>
+      </div>
+
+      <div class="card">
+        <h4>Health</h4>
+        <p>Heart Rate: <span id="heartRate">--</span> BPM</p>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
